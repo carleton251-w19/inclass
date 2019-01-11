@@ -2,7 +2,11 @@
 
 (define remove-first
   (lambda (item lst)
-    lst))
+    (cond ((null? lst) '())
+          ((equal? (car lst) item) (cdr lst))
+          (else
+           (cons (car lst)
+                 (remove-first item (cdr lst)))))))
 
 (check-equal?
  (remove-first 'a '(a b c)) '(b c))
