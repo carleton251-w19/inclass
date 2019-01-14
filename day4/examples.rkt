@@ -11,3 +11,19 @@
           [else input])))
 
 (subst 'b 'a '((b c) (b () d) b))
+
+(define cons-each
+  (lambda (s lst)
+    (if (null? lst)
+        '()
+        (cons
+         (cons s (car lst))
+         (cons-each s (cdr lst))))))
+
+(cons-each 'a '((b) (c) (d)))
+
+
+
+
+
+
