@@ -48,4 +48,5 @@
         (cons start
             (lambda () (gen-lazy-list (+ start 1) stop))))))
 
+(define ll (gen-lazy-list (1 4)))
 
