@@ -15,6 +15,9 @@
  (remove-first 'b '(a b c)) '(a c))
 
 (check-equal?
+ (remove-first 'b '(a b c b c a)) '(a c b c a))
+
+(check-equal?
  (remove-first 'g '(a b c)) '(a b c))
 
 (check-equal?
