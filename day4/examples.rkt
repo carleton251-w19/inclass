@@ -1,6 +1,9 @@
 (define subst
   (lambda (old new input)
-    (cond [(null? input)  _____________]
+    (cond [(null? input)  '()]
+
           [(list? input)  _____________]
-          [(equal?  ____  _____)   __________]
-          [else ______________])))
+
+          [(equal? old input) new]
+
+          [else input])))
