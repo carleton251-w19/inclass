@@ -44,3 +44,17 @@
         (my-foldl f
                   (f (car lst) init)
                   (cdr lst)))))
+
+(define my-foldr
+  (lambda (f init lst)
+    (if (null? lst) init
+        (f
+         (car lst)
+         (my-foldr f init (cdr lst))))))
+
+(my-foldl cons '() '(1 2 3))
+(my-foldl add-two 0 '(1 2 3))
+
+(my-foldr cons '() '(1 2 3))
+(my-foldr add-two 0 '(1 2 3))
+
