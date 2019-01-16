@@ -30,3 +30,10 @@
 
 (foldr cons '() '(1 2 3))
 (foldr add-two 0 '(1 2 3))
+
+
+(define my-map
+  (lambda (f lst)
+    (if (null? lst) '()
+          (cons  (f (car lst))  (my-map f (cdr lst))))))
+(my-map addOne '(4 7 8))
