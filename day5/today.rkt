@@ -19,3 +19,14 @@
     (+ x 1)))
 
 (map addOne '(6 2 6 7 1 9))
+
+(define add-two
+  (lambda (x y)
+    (+ x y)))
+
+;; reduce (Scheme calls it foldl and foldr)
+(foldl cons '() '(1 2 3))
+(foldl add-two 0 '(1 2 3))
+
+(foldr cons '() '(1 2 3))
+(foldr add-two 0 '(1 2 3))
