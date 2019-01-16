@@ -11,3 +11,11 @@
 (startthing 7)
 (startthing 9)
 
+;; Example of map. The hello world version
+(map null? '(5 you () () 1 ()))
+
+(define addOne
+  (lambda (x)
+    (+ x 1)))
+
+(map addOne '(6 2 6 7 1 9))
