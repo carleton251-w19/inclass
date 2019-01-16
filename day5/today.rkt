@@ -37,3 +37,10 @@
     (if (null? lst) '()
           (cons  (f (car lst))  (my-map f (cdr lst))))))
 (my-map addOne '(4 7 8))
+
+(define my-foldl
+  (lambda (f init lst)
+    (if (null? lst) init
+        (my-foldl f
+                  (f (car lst) init)
+                  (cdr lst)))))
