@@ -6,4 +6,8 @@
 
 ;; Try it
 ((mult 3) 5)
+(define startthing (mult 3))
+(startthing 5)
+(startthing 7)
+(startthing 9)
 
