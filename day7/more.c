@@ -1,8 +1,4 @@
-#include <stdlib.h>
-
-struct Wrapper {
-   int value;
-};
+#include <stdio.h>
 
 int main() {
     int a = 12;
