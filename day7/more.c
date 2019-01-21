@@ -18,6 +18,6 @@ int main() {
     *x = 12;
     printf("%i\n",*x);
     printf("%i\n",*y);
-    printf("%i\n",*a);
+    printf("%i\n",a);
 }
     
