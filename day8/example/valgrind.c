@@ -4,6 +4,6 @@
 int main() {
 
     system("hostname");
-    system("valgrind --leak-check=full ./cliontest");
+    system("valgrind --leak-check=full ./example");
     return 0;
 }
