@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 double fun1(int x) {
     return x * 0.5;
