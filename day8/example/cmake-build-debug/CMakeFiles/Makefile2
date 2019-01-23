@@ -102,6 +102,43 @@ clean: CMakeFiles/example.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/valgrind.dir
+
+# All Build rule for target.
+CMakeFiles/valgrind.dir/all:
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/depend
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target valgrind"
+.PHONY : CMakeFiles/valgrind.dir/all
+
+# Include target in all.
+all: CMakeFiles/valgrind.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/valgrind.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/valgrind.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/valgrind.dir/rule
+
+# Convenience name for target.
+valgrind: CMakeFiles/valgrind.dir/rule
+
+.PHONY : valgrind
+
+# clean rule for target.
+CMakeFiles/valgrind.dir/clean:
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/clean
+.PHONY : CMakeFiles/valgrind.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/valgrind.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

@@ -123,6 +123,19 @@ example/fast:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
 .PHONY : example/fast
 
+#=============================================================================
+# Target rules for targets named valgrind
+
+# Build rule for target.
+valgrind: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 valgrind
+.PHONY : valgrind
+
+# fast build rule for target.
+valgrind/fast:
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/build
+.PHONY : valgrind/fast
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -150,6 +163,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/main.c.s
 .PHONY : main.c.s
 
+valgrind.o: valgrind.c.o
+
+.PHONY : valgrind.o
+
+# target to build an object file
+valgrind.c.o:
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/valgrind.c.o
+.PHONY : valgrind.c.o
+
+valgrind.i: valgrind.c.i
+
+.PHONY : valgrind.i
+
+# target to preprocess a source file
+valgrind.c.i:
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/valgrind.c.i
+.PHONY : valgrind.c.i
+
+valgrind.s: valgrind.c.s
+
+.PHONY : valgrind.s
+
+# target to generate assembly for a file
+valgrind.c.s:
+	$(MAKE) -f CMakeFiles/valgrind.dir/build.make CMakeFiles/valgrind.dir/valgrind.c.s
+.PHONY : valgrind.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -157,11 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... example"
 	@echo "... edit_cache"
+	@echo "... example"
+	@echo "... valgrind"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... valgrind.o"
+	@echo "... valgrind.i"
+	@echo "... valgrind.s"
 .PHONY : help
 
 
