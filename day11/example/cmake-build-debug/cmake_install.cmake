@@ -1,4 +1,4 @@
-# Install script for directory: /Accounts/dmusicant/currentwork/cs251inclass/day8/example
+# Install script for directory: /Accounts/dmusicant/currentwork/cs251inclass/day11/example
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Accounts/dmusicant/currentwork/cs251inclass/day11/example/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
