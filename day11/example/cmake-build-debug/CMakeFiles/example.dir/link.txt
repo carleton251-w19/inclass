@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/example.dir/main.c.o  -o example 

@@ -1,0 +1,4 @@
+/Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles/example.dir
+/Accounts/dmusicant/currentwork/cs251inclass/day8/example/cmake-build-debug/CMakeFiles/valgrind.dir
