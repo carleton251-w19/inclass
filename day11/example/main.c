@@ -1,15 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-double fun1(int x) {
-    return x * 0.5;
-}
 
-
-double fun2(int *y) {
-    *y = *y * 2;
-    return *y * 1.5;
-}
 
 int main() {
     int x = 4;
