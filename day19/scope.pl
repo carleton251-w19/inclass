@@ -1,7 +1,7 @@
 $x = 8;
 
 sub fun1 {
-    my $x = 6;
+    local $x = 6;
     fun2();
 }
 
