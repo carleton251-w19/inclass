@@ -8,7 +8,6 @@ int multiply(int x, int y) {
     return x * y;
 }
 
-// good C
 int doit( int (*f)(int,int) ,
           int x, int y) {
     return (*f)(x,y);
