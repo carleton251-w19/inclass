@@ -9,8 +9,9 @@ int multiply(int x, int y) {
 }
 
 // bad C
-int doit(function f, int x, int y) {
-    return f(x,y);
+int doit( int (*f)(int,int) ,
+          int x, int y) {
+    return (*f)(x,y);
 }
 
 int main() {
